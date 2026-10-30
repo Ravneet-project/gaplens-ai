@@ -11,7 +11,7 @@ import History from './pages/History';
 import { saveResearchHistory } from './utils/researchHistory';
 
 const API_URL =
-  import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  import.meta.env.VITE_API_URL || 'https://gaplens-ai-backend.onrender.com';
 
 // Reusable heading
 function SectionHeading({ icon, title, count, color = '#eee9ff' }) {
