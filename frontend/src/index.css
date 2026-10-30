@@ -1,0 +1,135 @@
+
+/* =========================================
+   GAPLENS AI - GLOBAL STYLES
+   Cartoon + Modern SaaS Theme
+========================================= */
+
+/* Google Fonts - Must come first */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* =========================================
+   THEME VARIABLES
+========================================= */
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #20243a;
+  background-color: #f8f7ff;
+  font-synthesis: none;
+
+  --primary: #7765e3;
+  --primary-hover: #6553d5;
+  --primary-light: #eee9ff;
+
+  --mint: #a9e8d3;
+  --yellow: #ffd779;
+  --pink: #ff9ead;
+
+  --dark: #20243a;
+  --background: #f8f7ff;
+}
+
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+::selection {
+  background: #ddd5ff;
+  color: #20243a;
+}
+
+/* =========================================
+   CARTOON MASCOT ANIMATION
+========================================= */
+
+@keyframes mascotFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.mascot-floating {
+  animation: mascotFloat 3.5s ease-in-out infinite;
+}
+
+/* =========================================
+   SMOOTH INTERACTIONS
+========================================= */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 480px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
