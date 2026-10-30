@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+:root{font-family:'DM Sans',sans-serif;color:#292638;background:#fff9ed;font-synthesis:none;--primary:#ef6d93;--primary-hover:#dd4d7a;--primary-light:#ffe5ed;--mint:#a8e6cf;--yellow:#ffe66d;--pink:#ff9eae;--dark:#292638;--background:#fff9ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;min-height:100vh;overflow-x:hidden;background:#fff9ed}h1,h2,h3,h4,h5,h6{font-family:'Fredoka','DM Sans',sans-serif;letter-spacing:-.02em}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.6}::selection{background:#ffe66d;color:#292638}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #ed7097;outline-offset:3px}
+@keyframes mascotFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}.mascot-floating{animation:mascotFloat 3.5s ease-in-out infinite}
+/* Cartoon shell */
+.cartoon-sidebar{background:#fff1c8;border-right:3px solid #292638;box-shadow:5px 0 0 #2926380d}.brand-stamp{background:#ffe66d;border:2.5px solid #292638;box-shadow:3px 4px 0 #292638;color:#292638}.cartoon-sticker{background:#fff;border:2px dashed #e9869d;border-radius:14px;color:#d9577e;transform:rotate(-2deg)}.cartoon-nav-item{border:2px solid transparent;border-radius:17px;color:#49404c;transition:transform .2s,background .2s,box-shadow .2s}.cartoon-nav-item:hover{background:#fff8e7;transform:translateX(2px)}.cartoon-nav-item.is-active{background:#ff9eae;border-color:#292638;box-shadow:3px 4px 0 #292638;transform:translateY(-2px)}.cartoon-nav-item .nav-icon{background:#fff9ee;border:2px solid #292638}.cartoon-nav-item.is-active .nav-icon{background:#ffe66d}.sidebar-note{background:#ffe66d;border:2.5px solid #292638;border-radius:24px;box-shadow:4px 5px 0 #292638}.cartoon-navbar{background:#fffdf6;border-bottom:3px solid #292638}.cartoon-online{background:#e0f6e7;border:2px solid #292638;border-radius:30px}.cartoon-avatar{background:#ff9eae;border:2px solid #292638;border-radius:15px;box-shadow:3px 3px 0 #292638}.mascot-halo{background:#ffe66d;border:3px dashed #29263840;box-shadow:0 0 0 18px #fff8d780}.mascot-caption{background:#fff;border:2px solid #292638;border-radius:30px;box-shadow:3px 4px 0 #292638}
+/* Apply cartoon treatment to existing Tailwind UI without changing business logic */
+#root>div.min-h-screen{background-color:#fff9ed!important;color:#292638!important;background-image:radial-gradient(#e8cfc0 1px,transparent 1px);background-size:27px 27px}
+#root main>div>section,#root main>div>div>section{isolation:isolate}
+#root main .bg-white{background-color:#fffdf7!important}
+#root main .border-purple-100,#root main .border-\[\#eeeafa\]{border-color:#292638!important;border-width:2px!important}
+#root main .rounded-\[28px\],#root main .rounded-\[26px\],#root main .rounded-\[30px\],#root main .rounded-\[32px\]{border-radius:26px!important}
+#root main .bg-gradient-to-br,#root main .bg-gradient-to-r{background-image:linear-gradient(120deg,#ffe66d 0%,#ffe5a5 46%,#ffb1c3 100%)!important;border:3px solid #292638;box-shadow:7px 8px 0 #292638}
+#root main .bg-\[\#7765e3\],#root main .bg-\[\#6553d5\]{background-color:#ef6d93!important;color:#292638!important;border:2px solid #292638!important;box-shadow:3px 4px 0 #292638}
+#root main .text-\[\#7765e3\]{color:#d94d79!important}
+#root main .bg-\[\#eee9ff\],#root main .bg-\[\#f0ebff\],#root main .bg-\[\#f8f7ff\]{background-color:#fff1cb!important}
+#root main .bg-\[\#20243a\]{background-color:#292638!important}
+#root main .text-\[\#20243a\]{color:#292638!important}
+#root main .bg-\[\#e0f7ed\],#root main .bg-\[\#e5f7ee\]{background-color:#d9f6df!important}
+#root main .bg-\[\#fff2d5\]{background-color:#ffe66d!important}
+#root main .bg-\[\#ffe4eb\]{background-color:#ffb8c9!important}
+#root main .border-gray-200{border-color:#29263880!important;border-width:2px!important}
+#root main .shadow-sm{box-shadow:4px 5px 0 #29263818!important}
+#root main button:hover{filter:saturate(1.08)}
+#root main button:active{transform:translateY(2px)}
+#root main .grid.grid-cols-2.xl\:grid-cols-4>div{border:2px solid #292638!important;box-shadow:4px 5px 0 #292638!important}
+#root main .grid.md\:grid-cols-3>button{border:2px solid #292638!important;box-shadow:5px 6px 0 #292638!important}
+#root main .grid.md\:grid-cols-2>article{border:2px solid #292638!important;box-shadow:4px 5px 0 #292638!important}
+#root main input,#root main textarea{background-color:#fffefa}
+#root main .bg-\[\#eee9ff\].text-\[\#7765e3\]{background-color:#ffe66d!important}
+@media(max-width:640px){#root main .bg-gradient-to-br,#root main .bg-gradient-to-r{box-shadow:4px 5px 0 #292638}#root main .grid.grid-cols-2.xl\:grid-cols-4>div{box-shadow:2px 3px 0 #292638!important}}
+@media(prefers-reduced-motion:reduce){.mascot-floating{animation:none}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* Screenshot-matched History shell */
+.reference-sidebar{background:linear-gradient(170deg,#fff4b2,#fff3bd 58%,#ffd5a9);border-right:0;overflow:hidden}.reference-brand{display:flex;align-items:center;gap:9px;padding:17px 14px 22px}.reference-logo{font-size:42px;line-height:1}.reference-brand-title{font-family:'Fredoka',sans-serif;font-size:29px;font-weight:700;white-space:nowrap;letter-spacing:-1px}.reference-brand-title b{color:#ff3c8d}.reference-brand-subtitle{font-size:12px;font-weight:700;text-align:center;margin-top:2px}.reference-menu{display:flex;flex-direction:column;gap:7px;padding:0 10px}.reference-menu-item{width:100%;display:flex;align-items:center;gap:17px;border-radius:18px;padding:14px 18px;text-align:left;font-size:19px;font-family:'Fredoka',sans-serif;font-weight:700;transition:background .2s}.reference-menu-item i{font-size:30px;width:38px;color:#1d1a1b}.reference-menu-item:hover{background:#ffe0b3}.reference-menu-active{background:#ffafc6!important}.reference-sidebar-bottom{margin-top:auto;height:45%;min-height:320px;background:url('/images/history-sidebar.webp') center bottom/100% auto no-repeat;position:relative}.reference-quote{position:absolute;top:5%;left:12%;background:#fffef8;border:3px solid #1d1a1b;border-radius:48% 48% 42% 44%;padding:14px 19px;text-align:center;font-family:'Fredoka',sans-serif;font-weight:700;font-size:16px;line-height:1.5;transform:rotate(-5deg);box-shadow:3px 4px 0 #1d1a1b}.reference-quote small{font-size:13px}.reference-navbar{height:78px;background:linear-gradient(90deg,#ffa8c2,#ffb9cb);border-bottom:2px solid #f6a1b8}.reference-nav-pill{display:flex;align-items:center;gap:13px;background:#ffdae6;border:2px solid #f19fba;border-radius:30px;padding:10px 26px;color:#c32d7d;font-family:'Fredoka',sans-serif;font-weight:700;font-size:17px}.reference-nav-pill .bi-chevron-right{margin-left:15px}.reference-profile{display:flex;align-items:center;gap:12px;border-radius:30px;background:#ffdbe5;padding:6px 15px 6px 7px;min-width:210px}.reference-profile strong,.reference-profile small{display:block;line-height:1.2}.reference-profile strong{font-family:'Fredoka',sans-serif;font-size:14px}.reference-profile small{font-size:11px;color:#786b72}.reference-avatar{height:42px;width:42px;background:#ffe36d;border:2px solid #292638;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:23px}.reference-cloud{font-size:24px;margin-right:3px}@media(max-width:640px){.reference-navbar{height:67px}.reference-nav-pill{font-size:13px;padding:8px 12px;gap:7px}.reference-nav-pill .bi-chevron-right{margin-left:3px}.reference-profile{min-width:0;padding:4px 8px;gap:3px}.reference-cloud{display:none}.reference-avatar{height:34px;width:34px;font-size:18px}}
+/* Keep History screenshot look rather than generic global overrides */
+#root main .history-cartoon .history-hero{border:0!important;box-shadow:none!important;background:#ffe66d!important;border-radius:24px!important}#root main .history-cartoon .history-toolbar{background:#ffe4e6!important}#root main .history-cartoon .history-empty{background:#fffaf2!important;border:2px dashed #ffcfbd!important;border-radius:25px!important}#root main .history-cartoon .history-primary{background:#fa418d!important;color:white!important;border:0!important;box-shadow:0 4px 0 #d32d73!important}#root main .history-cartoon .history-case{border-width:2px!important}#root main .history-cartoon input{background:transparent!important}
+/* Roomier layout and unobstructed detective illustration */
+.reference-sidebar{width:260px!important}
+.reference-brand{padding:23px 16px 29px}
+.reference-menu{gap:12px;padding:0 12px}
+.reference-menu-item{padding:15px 17px;font-size:17px;gap:14px;min-height:59px}
+.reference-sidebar-footer{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-height:0;padding-top:18px}
+.reference-sidebar-footer .reference-quote{position:static;transform:none;box-shadow:2px 3px 0 #27212a;background:#fffefa;border:2px solid #27212a;border-radius:20px;padding:10px 14px;width:calc(100% - 28px);font-size:13px;line-height:1.35;text-align:center;margin:0 auto 10px;flex-shrink:0}
+.reference-sidebar-footer .reference-quote span{color:#f34491;font-size:19px}
+.reference-sidebar-footer img{width:100%;max-height:260px;object-fit:contain;object-position:center bottom;display:block;flex-shrink:1;min-height:0}
+#root>div>div.lg\:ml-\[280px\]{margin-left:260px}
+#root main{width:100%;min-width:0}
+.reference-navbar{padding-left:clamp(16px,2.6vw,40px);padding-right:clamp(16px,2.6vw,40px)}
+@media(max-width:1023px){#root>div>div.lg\:ml-\[280px\]{margin-left:0}.reference-sidebar{width:min(280px,86vw)!important}}
+@media(max-width:767px){.reference-brand{padding:16px 14px}.reference-menu{gap:5px}.reference-menu-item{min-height:48px;padding:9px 14px}.reference-sidebar-footer img{max-height:200px}}
+@media(max-height:740px) and (min-width:1024px){.reference-sidebar-footer img{max-height:180px}.reference-sidebar-footer .reference-quote{padding:7px;font-size:12px}.reference-menu{gap:4px}.reference-menu-item{min-height:45px;padding:8px 15px}.reference-brand{padding:12px 14px}}
