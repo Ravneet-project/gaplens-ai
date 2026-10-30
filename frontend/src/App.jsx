@@ -596,11 +596,16 @@ export default function App() {
 
     } catch (error) {
       console.error('GapLens AI error:', error);
+      console.error('Backend URL:', API_URL);
+
+      const isNetworkError =
+        error instanceof TypeError ||
+        error.message === 'Failed to fetch';
 
       setAnalysisError(
-        error.message === 'Failed to fetch'
-          ? 'Cannot connect to the backend. Please start the Node.js server on port 5000.'
-          : error.message
+        isNetworkError
+          ? 'Unable to connect to the live research API. Please check the backend connection and CORS configuration.'
+          : error.message || 'Research analysis failed.'
       );
 
     } finally {
